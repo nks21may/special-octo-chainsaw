@@ -1,0 +1,45 @@
+{
+  "name": "@w11k/angular-sticky-things",
+  "version": "1.6.0",
+  "peerDependencies": {
+    "@angular/common": "^4.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0",
+    "@angular/core": "^4.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0 || ^15.0.0",
+    "rxjs": "^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/@w11k/angular-sticky-things"
+  },
+  "globals": {
+    "rxjs": "rxjs",
+    "rxjs/operators": "rxjs/operators",
+    "@angular/common": "@angular/common",
+    "@angular/core": "@angular/core"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "module": "fesm2015/w11k-angular-sticky-things.mjs",
+  "es2020": "fesm2020/w11k-angular-sticky-things.mjs",
+  "esm2020": "esm2020/w11k-angular-sticky-things.mjs",
+  "fesm2020": "fesm2020/w11k-angular-sticky-things.mjs",
+  "fesm2015": "fesm2015/w11k-angular-sticky-things.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/w11k-angular-sticky-things.mjs",
+      "es2020": "./fesm2020/w11k-angular-sticky-things.mjs",
+      "es2015": "./fesm2015/w11k-angular-sticky-things.mjs",
+      "node": "./fesm2015/w11k-angular-sticky-things.mjs",
+      "default": "./fesm2020/w11k-angular-sticky-things.mjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  }
+}
